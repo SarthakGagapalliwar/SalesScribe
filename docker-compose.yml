@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  streamlit-app:
+    image: Streamlit:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: Streamlit
+    ports:
+      - '8501:8501'  # Map host port 8501 to container port 8501
+    networks:
+      - Streamlit
+    restart: unless-stopped
+
+networks:
+  Streamlit:
