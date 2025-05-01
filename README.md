@@ -39,7 +39,7 @@ Cold email generator for services company using groq, langchain and streamlit. I
      pip install -r requirements.txt
     ```
    
-5. Run the streamlit app:
+5. Run the streamlit app hi:
    ```commandline
    streamlit run app/main.py
    ```
